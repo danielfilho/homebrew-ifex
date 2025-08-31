@@ -1,13 +1,13 @@
 class Ifex < Formula
   desc "A modern CLI tool for managing EXIF data in JPEG, TIFF, DNG and RAW image files"
   homepage "https://github.com/danielfilho/ifex"
-  version "1.103.3"
+  version "1.104.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/danielfilho/ifex/releases/download/v1.103.3/ifex-macos-x86_64"
-      sha256 "3360b4ead0610e06bba87fd80295e1df4d38605067f1a004dd5afd2f2fe5c855"
+      url "https://github.com/danielfilho/ifex/releases/download/v1.104.0/ifex-macos-x86_64"
+      sha256 "87111d597833cd0c5e1d882fc4511b13df5fc2d25d29a4a24692a6e6c420db12"
 
       def install
         bin.install "ifex-macos-x86_64" => "ifex"
@@ -15,8 +15,8 @@ class Ifex < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/danielfilho/ifex/releases/download/v1.103.3/ifex-macos-aarch64"
-      sha256 "cc669b11a51b50ec261d8b61dd12156d45489e6426fcc19439c575c322a8623f"
+      url "https://github.com/danielfilho/ifex/releases/download/v1.104.0/ifex-macos-aarch64"
+      sha256 "02d30cd043f240b63bc52cdac35b63aab6dcccc2c7f0f621d8c12ec8c59b12f6"
 
       def install
         bin.install "ifex-macos-aarch64" => "ifex"
@@ -26,8 +26,8 @@ class Ifex < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/danielfilho/ifex/releases/download/v1.103.3/ifex-linux-x86_64"
-      sha256 "18cac5aab5b4786c358167edd9d844dd6da77afc076ebb93e44cd74a02771f7e"
+      url "https://github.com/danielfilho/ifex/releases/download/v1.104.0/ifex-linux-x86_64"
+      sha256 "a461135d3d487dbfadbc88114021be0a8c2a0a0ea15d339668cbb14cf18b3ed1"
 
       def install
         bin.install "ifex-linux-x86_64" => "ifex"
